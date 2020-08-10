@@ -3,29 +3,26 @@
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
 
-@import 'vendors/fontawesome/fontawesome.scss';
-@import 'vendors/fontawesome/solid.scss';
 
 @import 'base/reset';
 @import 'base/typography';
 
-@import 'layout/article';
-@import 'layout/author';
+
 @import 'layout/navigation';
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/sidebar';
 @import 'layout/forms';
-@import 'layout/title';
+@import 'layout/main';
+@import 'layout/suscribete';
 
 
-@import 'components/buttons';
 @import 'components/carousel';
 @import 'components/cover';
 @import 'components/dropdown';
-@import 'components/links';
 @import 'components/pagination';
+@import 'components/news';
 
 
 @import 'pages/home';

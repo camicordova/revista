@@ -11,34 +11,108 @@
 <body>
     <div class="contenido">
         <header class="header">
-            <div class="logo">
+            <div class="header__logo">
                 <span>DIARIO</span>
                 <i class="fas fa-ellipsis-v"></i>
             </div>
-            <nav class="nav">
-                <a href="#">NOSOTROS</a>
-                <a href="#">CONTACTO</a>
-                <input type="text" class="nav__buscar" />
-            </nav>
+            <ul class="nav">
+                <li>
+                    <a href="#">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="#">CONTACTO</a>
+                </li>
+                <li>
+                    <input type="text" class="nav__buscar" placeholder="buscar..." />
+                </li>
+            </ul>
         </header>
         <main class="main">
-<div class="news">
-    <span class="news__title"></span>
-    <div class="news__img"></div>
-    <p class="news__extract"></p>
-</div>
+            <div class="main__wrapper">
+                <div class="news">
+                    <span class="news__title">Lorem ipsum dolor sit amet,
+                    </span>
+                    <img class="news__img" src="https://picsum.photos/200/300?random=1" />
+                    <p class="news__extract">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="news">
+                    <span class="news__title">Lorem ipsum dolor sit amet,
+                    </span>
+                    <img class="news__img" src="https://picsum.photos/200/300?random=2" />
+                    <p class="news__extract">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="news">
+                    <span class="news__title">Lorem ipsum dolor sit amet,
+                    </span>
+                    <img class="news__img" src="https://picsum.photos/200/300?random=3" />
+                    <p class="news__extract">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="news">
+                    <span class="news__title">Lorem ipsum dolor sit amet,
+                    </span>
+                    <img class="news__img" src="https://picsum.photos/200/300?random=4" />
+                    <p class="news__extract">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="news">
+                    <span class="news__title">Lorem ipsum dolor sit amet,
+                    </span>
+                    <img class="news__img" src="https://picsum.photos/200/300?random=5" />
+                    <p class="news__extract">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="news">
+                    <span class="news__title">Lorem ipsum dolor sit amet,
+                    </span>
+                    <img class="news__img" src="https://picsum.photos/200/300?random=6" />
+                    <p class="news__extract">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <section class="suscribete">
+                <span class="suscribete__title">Lorem ipsum dolor sit amet</span>
+                <p class="suscribete__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                </p>
+                <form>
+                    <input type="email" class="suscribete__mail" />
+                    <button type="submit" class="suscribete__button">Suscribete</button>
+                </form>
+            </section>
+            <footer class="footer">
+                <p>Todos los derechos reservados</p>
+            </footer>
         </main>
-        <section class="suscribete"></section>
-        <span class="suscribete__title"></span>
-        <p class="suscribete__description"></p>
-        <form>
-        <input type="email" class="suscribete__mail"/>
-        <button type="submit" class="suscribete__button">
-    </form>
+        <div class="sidebar">
+            <section class="sidebar__nosotros">
+                <h2>Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo</p>
+            </section>
+            <section class="sidebar__tags">
+                <h2>Tags</h2>
+                <ul>
+                    <li>Viajes</li>
+                    <li>Noticias</li>
+                    <li>Comida</li>
+                </ul>
+            </section>
+            <section class="sidebar__destacados">
+                <h2>Destacados</h2>
+                <div class="destacado">
+                    <span class="destacado__title">Lorem ipsum dolor sit amet.</span>
+                    <img class="destacado__img" src="https://picsum.photos/id/237/220/220" />
+                </div>
+                <div class="destacado">
+                    <span class="destacado__title">Lorem ipsum dolor sit amet.</span>
+                    <img class="news__img" src="https://picsum.photos/id/1025/220/220" />
+                </div>
+                <div class="destacado">
+                    <span class="destacado__title">Lorem ipsum dolor sit amet.</span>
+                    <img class="news__img" src="https://picsum.photos/id/1003/220/220" />
+                </div>
+            </section>
+        </div>
+       
+        
     </div>
-    <footer class="footer">
-        <p>Todos los derechos reservados</p>
-    </footer>
 </body>
 
 </html>

@@ -1,0 +1,42 @@
+.sidebar {
+    background-color: #f2f4f5;
+    width: 220px;
+
+    section {
+        border-bottom: 1px solid black;
+
+        h2 {
+            font-size: 25px;
+        }
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    &__tags {
+        height: 120px;
+
+
+
+        ul {
+            background-color: steelblue;
+            color: white;
+            list-style: none;
+            padding-left: 5px;
+
+            li {
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+        }
+    }
+    &__destacados {
+        .destacado {
+            &__title {
+                margin: 1.33em 0;
+                display: block;
+            }
+        }
+    }
+}
