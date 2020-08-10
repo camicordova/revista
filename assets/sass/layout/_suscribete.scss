@@ -11,6 +11,11 @@
     &__title {
         font-size: 24px;
         font-weight: bold;
+        max-width: 85%;
+
+        @media (min-width: 576px) {
+            max-width: unset;
+        }
     }
     &__button {
         background-color: coral;

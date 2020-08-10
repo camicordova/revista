@@ -1,27 +1,61 @@
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: monospace; }
 
 .nav {
   flex: 1 1 100%;
-  text-align: right; }
+  text-align: right;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  .nav li:first-of-type {
+    display: none; }
+  @media (min-width: 576px) {
+    .nav {
+      display: unset;
+      flex: 1 1 100%;
+      text-align: right;
+      list-style: disc; }
+      .nav li:first-of-type {
+        display: unset; } }
   .nav a {
     text-decoration: none; }
   .nav__buscar {
     border-radius: 20px;
-    border: 2px solid black; }
+    border: 2px solid black;
+    margin-left: 10px;
+    width: 130px; }
+    @media (min-width: 576px) {
+      .nav__buscar {
+        width: unset; } }
 
 .contenido {
-  display: grid;
-  grid-template: auto 1fr auto / 1fr auto;
-  width: 960px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: 0 auto; }
+  @media (min-width: 576px) {
+    .contenido {
+      display: grid;
+      grid-template: auto 1fr auto / 1fr auto;
+      width: 960px; } }
   .contenido header {
-    grid-column: 1 / 4;
-    width: 960px; }
+    width: 100%; }
+    @media (min-width: 576px) {
+      .contenido header {
+        grid-column: 1 / 4;
+        width: 960px; } }
   .contenido main {
     width: 100%; }
   .contenido .sidebar {
-    grid-column: 3 / 4; }
+    display: none; }
+    @media (min-width: 576px) {
+      .contenido .sidebar {
+        display: unset;
+        grid-column: 3 / 4; } }
   .contenido footer {
     grid-column: 1 / 4; }
 
@@ -91,7 +125,11 @@ body {
   align-items: center; }
   .suscribete__title {
     font-size: 24px;
-    font-weight: bold; }
+    font-weight: bold;
+    max-width: 85%; }
+    @media (min-width: 576px) {
+      .suscribete__title {
+        max-width: unset; } }
   .suscribete__button {
     background-color: coral;
     color: white;
@@ -112,14 +150,24 @@ body {
       border-color: #121619; }
 
 .news {
-  flex: 0 0 30%;
+  flex: 0 0 100%;
   height: fit-content;
   display: block; }
+  @media (min-width: 576px) {
+    .news {
+      flex: 0 0 30%; } }
   .news__title {
     font-size: 20px;
     font-weight: bold;
     display: block;
     margin: 0.83em 0; }
+  .news__img {
+    width: 100%;
+    height: 180px; }
+    @media (min-width: 576px) {
+      .news__img {
+        width: unset;
+        height: unset; } }
   .news__extract {
     display: block;
     padding: 5px 15px; }
